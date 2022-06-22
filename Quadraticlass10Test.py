@@ -22,9 +22,9 @@ if selected == 'Donate Money':
 
 if selected == 'Quadratic Equations Test':
   def addscore():
-    score += 3
+    nonlocal score += 3
   def subtractscore():
-    score -= 1
+    nonlocal score -= 1
   st.title(f"You have chosen {selected}")
   student=st.text_input("what is your name ?")
   st.write("Attempt all qustions , You get + 3 marks for correct answer , -1 marks for wrong answer and 0 for not attempting")
