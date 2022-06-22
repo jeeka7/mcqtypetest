@@ -28,10 +28,10 @@ if selected == 'Quadratic Equations Test':
   st.write("Attempt all qustions , You get + 3 marks for correct answer , -1 marks for wrong answer and 0 for not attempting")
   st.write("Q1 : The Polynomial Equation x (x + 1) + 8 = (x + 2) (x - 2) is")
   a1=st.radio("q1",('cubic','quadratic','linear','biquadratic'),horizontal=True)
-    if a1 == 'linear':
-      addscore()
-    else a1 == 'cubic'or'quadratic'or'biquadratic':
-      subtractscore()
+  if a1 == 'linear':
+    addscore()
+  else a1 == 'cubic'or'quadratic'or'biquadratic':
+    subtractscore()
   st.write("your score is {}",format(score)) 
 if selected == 'Result':
   st.title(f"You have chosen {selected}")
