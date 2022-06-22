@@ -40,7 +40,7 @@ if selected == 'Quadratic Equations Test':
   elif a1 == 'cubic'or a1 =='quadratic'or a1=='biquadratic':
     subtractscore()
   
-  st.write("your score is {}",format(score)) 
+  st.write("your score is",score) 
 if selected == 'Result':
   st.title(f"You have chosen {selected}")
   
