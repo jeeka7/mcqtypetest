@@ -30,7 +30,7 @@ if selected == 'Quadratic Equations Test':
   a1=st.radio("q1",('cubic','quadratic','linear','biquadratic'),horizontal=True)
   if a1 == 'linear':
     addscore()
-  else a1 == 'cubic'or a1 =='quadratic'or a1=='biquadratic':
+  elif a1 == 'cubic'or a1 =='quadratic'or a1=='biquadratic':
     subtractscore()
   st.write("your score is {}",format(score)) 
 if selected == 'Result':
