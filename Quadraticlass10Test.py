@@ -31,17 +31,23 @@ if selected == 'Quadratic Equations Test':
     score = score - 1
   st.title(f"You have chosen {selected}")
   student=st.text_input("what is your name ?")
-  st.write("Attempt all qustions , You get + 3 marks for correct answer , -1 marks for wrong answer and 0 for not attempting")
+  st.write("Attempt all questions , You get + 3 marks for correct answer , -1 marks for wrong answer and 0 for not attempting")
+  
   st.write("Q1 : The Polynomial Equation x (x + 1) + 8 = (x + 2) (x - 2) is")
-  a1=st.radio("q1",('cubic','quadratic','linear','biquadratic'),horizontal=True)
-
+  a1=st.radio("Ans.1",('cubic','quadratic','linear','biquadratic'),horizontal=True)
   if a1 == 'linear':
     addscore()
   elif a1 == 'cubic'or a1 =='quadratic'or a1=='biquadratic':
     subtractscore()
   
-  st.write("your score is",score) 
+  st.write("Q2 : The Quadratic equation whore one rational root is 3+u"\u221A".encode('utf-8')2 is")
+  a2=st.radio("Ans.2",('x\u00b2-7x+5=0','x\u00b2+7x+6=0','x\u00b2-7x+6=0','x\u00b2-6x+7=0'),horizontal=True)
+  if a2 == 'x\u00b2+7x+6=0':
+    addscore()
+  elif a2 == 'x\u00b2-7x+5=0'or a1 =='x\u00b2-7x+6=0'or a1=='x\u00b2-6x+7=0':
+    subtractscore()
+  
 if selected == 'Result':
   st.title(f"You have chosen {selected}")
-  
+  st.write("your score is",score) 
   #st.write("Congratulations {}, you have scored {} in your test and your Overall Rank is {}",format(   ))
