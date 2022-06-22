@@ -27,10 +27,10 @@ if selected == 'Donate Money':
 
 if selected == 'Quadratic Equations Test':
   def addscore():
-    global st.session_state.score
+    global score
     st.session_state.score = st.session_state.score + 3
   def subtractscore():
-    global st.session_state.score
+    global score
     st.session_state.score = st.session_state.score - 1
   st.title(f"You have chosen {selected}")
   student=st.text_input("what is your name ?")
