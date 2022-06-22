@@ -4,6 +4,8 @@ import pandas as pd
 
 menu=['Donate Money','Quadratic Equations Test','Result']
 
+score=0
+
 with st.sidebar:
   selected = option_menu(
   menu_title = None,
@@ -22,15 +24,17 @@ if selected == 'Donate Money':
 
 if selected == 'Quadratic Equations Test':
   def addscore():
-    nonlocal score += 3
+    global score
+    score = score + 3
   def subtractscore():
-    nonlocal score -= 1
+    global score
+    score = score - 1
   st.title(f"You have chosen {selected}")
   student=st.text_input("what is your name ?")
   st.write("Attempt all qustions , You get + 3 marks for correct answer , -1 marks for wrong answer and 0 for not attempting")
   st.write("Q1 : The Polynomial Equation x (x + 1) + 8 = (x + 2) (x - 2) is")
   a1=st.radio("q1",('cubic','quadratic','linear','biquadratic'),horizontal=True)
-  score=0
+
   if a1 == 'linear':
     addscore()
   elif a1 == 'cubic'or a1 =='quadratic'or a1=='biquadratic':
