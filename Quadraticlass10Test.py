@@ -40,7 +40,7 @@ if selected == 'Quadratic Equations Test':
   elif a1 == 'cubic'or a1 =='quadratic'or a1=='biquadratic':
     subtractscore()
   
-  st.write("Q2 : The Quadratic equation whore one rational root is 3+u"\u221A".encode('utf-8')2 is")
+  st.write("Q2 : The Quadratic equation whore one rational root is 3+\u221A2 is")
   a2=st.radio("Ans.2",('x\u00b2-7x+5=0','x\u00b2+7x+6=0','x\u00b2-7x+6=0','x\u00b2-6x+7=0'),horizontal=True)
   if a2 == 'x\u00b2+7x+6=0':
     addscore()
