@@ -17,6 +17,9 @@ if selected == 'Donate Money':
   st.title(f"You have chosen {selected}")
   st.write(" Kindly Donate whatever amount you feel is right to keep making such applications and tests in future")
   st.image('qrcode.png')
+  url = "https://paytm.me/K1T-ra3"
+  st.write("Donate Via [link](%s)" % url)
+
 if selected == 'Quadratic Equations Test':
   score = 0
   def addscore():
