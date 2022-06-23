@@ -47,6 +47,7 @@ if selected == 'Quadratic Equations Test':
     subtractscore()
   elif (a1 == 'SKIP'):
     DoNothing()
+  
   st.write("Q2 : The Quadratic equation whore one rational root is 3+\u221A2 is")
   a2=st.radio("Ans.2",('x\u00b2-7x+5=0','x\u00b2+7x+6=0','x\u00b2-7x+6=0','x\u00b2-6x+7=0','SKIP'),horizontal=True)
   if a2 == 'x\u00b2+7x+6=0':
@@ -55,7 +56,23 @@ if selected == 'Quadratic Equations Test':
     subtractscore()
   elif (a2 == 'SKIP'):
     DoNothing()
+
+
+CREATE DATABASE exam;
+
+USE exam;
+
+CREATE TABLE mytable (
+    name            varchar(80),
+    marks             TINYINT
+);
+
+INSERT INTO mytable VALUES ('Mary', 3), ('John', 14), ('Robert', 11);    
+    
 st.write("your final score is",score)
+
+
+
 if selected == 'Result':
   st.session_state.result = score
   st.title(f"You have chosen {selected}")
