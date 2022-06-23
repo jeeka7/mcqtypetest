@@ -47,7 +47,7 @@ if selected == 'Quadratic Equations Test':
   a2=st.radio("Ans.2",('x\u00b2-7x+5=0','x\u00b2+7x+6=0','x\u00b2-7x+6=0','x\u00b2-6x+7=0','SKIP'),horizontal=True)
   if a2 == 'x\u00b2+7x+6=0':
     addscore()
-  elif (a2 == 'x\u00b2-7x+5=0')or(a1 =='x\u00b2-7x+6=0')or(a1=='x\u00b2-6x+7=0'):
+  elif (a2 == 'x\u00b2-7x+5=0')or(a2 =='x\u00b2-7x+6=0')or(a2=='x\u00b2-6x+7=0'):
     subtractscore()
   elif (a2 == 'SKIP'):
     DoNothing()
