@@ -46,7 +46,7 @@ if selected == 'Quadratic Equations Test':
     addscore()
   elif a2 == 'x\u00b2-7x+5=0'or a1 =='x\u00b2-7x+6=0'or a1=='x\u00b2-6x+7=0':
     subtractscore()
-  
+  st.write("your score is",score)
 if selected == 'Result':
   st.title(f"You have chosen {selected}")
   st.write("your score is",score) 
