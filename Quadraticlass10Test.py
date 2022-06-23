@@ -4,6 +4,10 @@ import pandas as pd
 
 menu=['Donate Money','Quadratic Equations Test','Result']
 
+if 'result' not in st.session_state:
+    st.session_state.result = 0
+
+
 score=0
 
 with st.sidebar:
