@@ -37,14 +37,14 @@ if selected == 'Quadratic Equations Test':
   a1=st.radio("Ans.1",('cubic','quadratic','linear','biquadratic'),horizontal=True)
   if a1 == 'linear':
     addscore()
-  elif a1 == 'cubic'or a1 =='quadratic'or a1=='biquadratic':
+  elif (a1 == 'cubic')or (a1 =='quadratic')or (a1=='biquadratic'):
     subtractscore()
   
   st.write("Q2 : The Quadratic equation whore one rational root is 3+\u221A2 is")
   a2=st.radio("Ans.2",('x\u00b2-7x+5=0','x\u00b2+7x+6=0','x\u00b2-7x+6=0','x\u00b2-6x+7=0'),horizontal=True)
   if a2 == 'x\u00b2+7x+6=0':
     addscore()
-  elif a2 == 'x\u00b2-7x+5=0'or a1 =='x\u00b2-7x+6=0'or a1=='x\u00b2-6x+7=0':
+  elif (a2 == 'x\u00b2-7x+5=0')or(a1 =='x\u00b2-7x+6=0')or(a1=='x\u00b2-6x+7=0'):
     subtractscore()
   st.write("your score is",score)
 if selected == 'Result':
