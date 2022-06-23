@@ -4,9 +4,6 @@ import pandas as pd
 
 menu=['Donate Money','Quadratic Equations Test','Result']
 
-if "score" not in st.session_state:
-  st.session_state.score = 0
-
 score=0
 
 with st.sidebar:
@@ -28,10 +25,10 @@ if selected == 'Donate Money':
 if selected == 'Quadratic Equations Test':
   def addscore():
     global score
-    st.session_state.score = st.session_state.score + 3
+    score = score + 3
   def subtractscore():
     global score
-    st.session_state.score = st.session_state.score - 1
+    score = score - 1
   st.title(f"You have chosen {selected}")
   student=st.text_input("what is your name ?")
   st.write("Attempt all questions , You get + 3 marks for correct answer , -1 marks for wrong answer and 0 for not attempting")
@@ -52,5 +49,5 @@ if selected == 'Quadratic Equations Test':
   
 if selected == 'Result':
   st.title(f"You have chosen {selected}")
-  st.write("your score is",st.session_state.score) 
+  st.write("your score is",score) 
   #st.write("Congratulations {}, you have scored {} in your test and your Overall Rank is {}",format(   ))
