@@ -55,8 +55,9 @@ if selected == 'Quadratic Equations Test':
     subtractscore()
   elif (a2 == 'SKIP'):
     DoNothing()
-st.session_state.result = score
+
 if selected == 'Result':
+  st.session_state.result = score
   st.title(f"You have chosen {selected}")
   st.write("your final score is",st.session_state.result) 
   #st.write("Congratulations {}, you have scored {} in your test and your Overall Rank is {}",format(   ))
