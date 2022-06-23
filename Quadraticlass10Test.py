@@ -71,7 +71,6 @@ INSERT INTO mytable VALUES ('Mary', 3), ('John', 14), ('Robert', 11);
     
 st.write("your final score is",score)
 
-import streamlit as st
 import mysql.connector
 
 # Initialize connection.
