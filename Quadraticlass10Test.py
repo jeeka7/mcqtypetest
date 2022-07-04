@@ -11,7 +11,11 @@ def init_connection():
 
 conn = init_connection()
 
+
 st.write(st.secrets["mysql"])
+
+st.write(conn)
+st.write(conn.cursor())
 
 # Perform query.
 
