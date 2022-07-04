@@ -6,10 +6,10 @@ import mysql.connector
 
 # Initialize connection.
 
-def init_connection():
-    return mysql.connector.connect(**st.secrets["mysql"])
+cursor = conn.cursor()
 
-conn = init_connection()
+cursor.execute("select * from users")
+print(cursor.fetchall())
 
 
 st.write(st.secrets["mysql"])
