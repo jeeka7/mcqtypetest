@@ -18,7 +18,7 @@ st.write(conn)
 st.write(conn.cursor())
 
 
-st.write(conn.cursor().execute("DESCRIBE users;"))
+st.write(conn.cursor().execute("DESCRIBE users;").fetchall())
 # Perform query.
 
 def run_query(query):
