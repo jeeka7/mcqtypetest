@@ -28,7 +28,7 @@ def run_query(query):
 
 
 # Print results.
-for row in results:
+for row in result:
     st.write(f"{row[0]}")
 
 
