@@ -9,7 +9,7 @@ import mysql.connector
 conn = mysql.connector.connect(host="sql6.freemysqlhosting.net", port=3306, database="sql6502428", user="sql6502428", password="kSsQQvak3K")
 cursor = conn.cursor()
  
-cursor.execute("select * from users")
+cursor.execute("select username from users")
 result = cursor.fetchall()
  
 st.write(st.secrets["mysql"])
