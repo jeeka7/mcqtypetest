@@ -12,8 +12,6 @@ cursor = conn.cursor()
 cursor.execute("select * from users")
 result = cursor.fetchall()
  
-print(result)
-
 st.write(st.secrets["mysql"])
 
 st.write(conn)
@@ -28,10 +26,9 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = cursor.fetchall()
 
 # Print results.
-for row in rows:
+for row in results:
     st.write(f"{row[0]}")
 
 
