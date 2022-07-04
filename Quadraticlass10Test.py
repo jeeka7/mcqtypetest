@@ -60,15 +60,6 @@ if selected == 'Quadratic Equations Test':
     DoNothing()
 
 
-CREATE DATABASE exam;
-
-USE exam;
-
-CREATE TABLE mytable (
-    name            varchar(80),
-    marks             TINYINT
-);
-
 INSERT INTO mytable VALUES ('Mary', 3), ('John', 14), ('Robert', 11);    
     
 st.write("your final score is",score)
