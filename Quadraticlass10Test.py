@@ -20,11 +20,11 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = run_query("SELECT * from mytable;")
+rows = run_query("SELECT * from users;")
 
 # Print results.
 for row in rows:
-    st.write(f"{row[0]} has a :{row[1]}:")
+    st.write(f"{row[0]}")
 
 
 menu=['Donate Money','Quadratic Equations Test','Result']
