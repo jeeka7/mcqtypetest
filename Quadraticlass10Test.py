@@ -20,7 +20,7 @@ st.write(conn)
 st.write(conn.cursor())
 
 
-st.write(conn.cursor().execute("DESCRIBE users;").fetchall())
+
 # Perform query.
 
 def run_query(query):
@@ -28,7 +28,7 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = run_query("SELECT * from users;")
+rows = cursor.fetchall()
 
 # Print results.
 for row in rows:
