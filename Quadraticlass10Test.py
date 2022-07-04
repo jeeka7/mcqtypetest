@@ -2,8 +2,6 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd
 
-import mysql.connector
-
 menu=['Donate Money','Quadratic Equations Test','Result']
 
 if 'result' not in st.session_state:
