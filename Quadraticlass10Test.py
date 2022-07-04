@@ -17,6 +17,8 @@ st.write(st.secrets["mysql"])
 st.write(conn)
 st.write(conn.cursor())
 
+
+st.write(conn.cursor().execute("DESCRIBE users;"))
 # Perform query.
 
 def run_query(query):
