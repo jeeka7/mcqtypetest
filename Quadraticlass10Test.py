@@ -14,8 +14,8 @@ result = cursor.fetchall()
 
 def run_query(query):
    with conn.cursor() as cur:
-       cur.execute(query)
-       return cur.fetchall()
+      cur.execute(query)
+      return cur.fetchall()
  
 #st.write(st.secrets["mysql"])
 
@@ -76,9 +76,11 @@ if selected == 'Quadratic Equations Test':
 if selected == 'Result':
   st.session_state.result = score
   st.title(f"You have chosen {selected}")
+  for row in result:
+   st.write(f"{row[0]}")
+
 
 
 # Perform query.
 
- for row in result:
-    st.write(f"{row[0]}")
+ 
