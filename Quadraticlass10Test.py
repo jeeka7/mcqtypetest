@@ -17,11 +17,6 @@ result = cursor.fetchall()
 #st.write(conn)
 #st.write(conn.cursor())
 
-
-
-
-
-
 menu=['Donate Money','Quadratic Equations Test','Result']
 
 score=0
@@ -72,12 +67,7 @@ if selected == 'Quadratic Equations Test':
     subtractscore()
   elif (a2 == 'SKIP'):
     DoNothing()
-
-
-    
-st.write("your final score is",score)
-
-
+  
 if selected == 'Result':
   st.session_state.result = score
   st.title(f"You have chosen {selected}")
@@ -85,11 +75,11 @@ if selected == 'Result':
 
 # Perform query.
 
-def run_query(query):
+ def run_query(query):
     with conn.cursor() as cur:
         cur.execute(query)
         return cur.fetchall()
 
   # Print results.
-for row in result:
+ for row in result:
     st.write(f"{row[0]}")
