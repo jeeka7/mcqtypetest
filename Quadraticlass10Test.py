@@ -53,6 +53,7 @@ if selected == 'Quadratic Equations Test':
     score = score - 1
   st.title(f"You have chosen {selected}")
   student=st.text_input("what is your name ?")
+  st.write(student)
   st.write("Attempt all questions , You get + 3 marks for correct answer , -1 marks for wrong answer and 0 for not attempting")
   
   st.write("Q1 : The Polynomial Equation x (x + 1) + 8 = (x + 2) (x - 2) is")
