@@ -80,11 +80,5 @@ if selected == 'Result':
 
 # Perform query.
 
- def run_query(query):
-    with conn.cursor() as cur:
-        cur.execute(query)
-        return cur.fetchall()
-
-  # Print results.
  for row in result:
     st.write(f"{row[0]}")
