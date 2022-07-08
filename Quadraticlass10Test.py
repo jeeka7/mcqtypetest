@@ -11,6 +11,11 @@ cursor = conn.cursor()
  
 cursor.execute("select username from users")
 result = cursor.fetchall()
+
+def run_query(query):
+   with conn.cursor() as cur:
+       cur.execute(query)
+       return cur.fetchall()
  
 #st.write(st.secrets["mysql"])
 
